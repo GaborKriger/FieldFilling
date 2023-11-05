@@ -34,8 +34,10 @@ class Program
             // Ha a FormatColumn hibát dob, akkor itt írjuk ki (cserélehető message box-ra)
             Console.WriteLine(ex.ToString());
             // Felhasználó értesítése. Itt szokás logolni is valahova, mert nem tudják elmondani, hogy mi történt
-            Console.WriteLine("Program futása a fenti hiba miatt megszakadt! Értesítse az IT területett róla!");
+            Console.WriteLine("Program futása a fenti hiba miatt megszakadt! Kérem értesítse az IT területet!");
+            // Ne lépjen ki magától a terminal ezért kell egy Enter a végén
             Console.ReadKey();
+            // Program futás megszakítás
             Environment.Exit(0);
         }
 
@@ -79,7 +81,8 @@ class Program
             }
 
             // Paraméterben van megadva, hogy egy cella megkorára legyen
-            // Paraméterből kivonjuk a mező hosszát, így megkapjuk, hogy mennyi szóközzel tölse fel után a string-et.
+            // Paraméterből kivonjuk a mező hosszát, így megkapjuk, hogy mennyi szóközzel tölse fel utána a string-et.
+            // PL. column 8 hosszú 10 helyre kell kerülnie. 10-8=2, ezért a 8 értékhez 2 szóköz kerül hozzáfűzésre
             invoice.ColumnA = invoice.ColumnA
                 .PadRight(invoice.ColumnA.Length + (COLUMN_A_WIDTH - invoice.ColumnA.Length), ' ');
             invoice.ColumnB = invoice.ColumnB
