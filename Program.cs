@@ -52,6 +52,9 @@ class Program
             invoice.ColumnB = invoice.ColumnB.PadRight(invoice.ColumnB.Length + (15 -invoice.ColumnB.Length), ' '); 
             invoice.ColumnC = invoice.ColumnC.PadRight(invoice.ColumnC.Length + (15 -invoice.ColumnC.Length), ' '); 
             invoice.ColumnD = invoice.ColumnD.PadRight(invoice.ColumnD.Length + (15 -invoice.ColumnD.Length), ' '); 
+
+            // Ha paraméterezni szeretnéd akkor a 15 helyett végig kell olvasni a szótárt és az ottani key - value páros
+            // alapján kell meghatározni, hogy megkorára kell kihúzni az adott cellát
         }
     }
 }
