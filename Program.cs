@@ -71,7 +71,7 @@ class Program
         foreach (var invoice in invoices)
         {
 
-            // Ha a kitöltendő mező hossza kissebb, mint a mező hossza,
+            // Ha a kitöltendő érték hossza kissebb, mint az a mező értéke ami belekerül,
             // akkor hibát kell dobni, mert túl fog lógni a megengedett rendelkezésre álló terület mennyiségen
             if ((invoice.ColumnA.Length > COLUMN_A_WIDTH) || (invoice.ColumnB.Length > COLUMN_B_WIDTH) ||
                 (invoice.ColumnC.Length > COLUMN_C_WIDTH) || (invoice.ColumnD.Length > COLUMN_D_WIDTH))
