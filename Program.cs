@@ -30,7 +30,7 @@ class Program
     static List<Invoice> FillInvoices()
     {
         // Itt beégetett feltötlés van, de ide jönne az SQL connection rész
-        return Util.FillInvoces();
+        return Util.FillInvoices();
     }
 
     static void WriteToConsole()

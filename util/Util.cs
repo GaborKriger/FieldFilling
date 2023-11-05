@@ -5,7 +5,7 @@ namespace FieldFilling.util
     static class Util
     {
 
-        internal static List<Invoice> FillInvoces()
+        internal static List<Invoice> FillInvoices()
         {
             // Ez a lista tartalmazz a számlákat (átmenetileg, míg visszaküldjük a Main-be)
             List<Invoice> invoices = new List<Invoice>();
