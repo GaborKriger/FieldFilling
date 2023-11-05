@@ -23,7 +23,7 @@ class Program
         // Kiiratjuk azt a formát melyünk van
         WriteToConsoleOutInvoices();
 
-        // Hibakezelésbe tesszük, mert a FormatColumn-ban hibás paraméterezésre hibát dobunk vissza
+        // Hibakezelésbe tesszük, mert a FormatColumn-ban hibát dobunk, ha nem fér el a mező
         try
         {
             // Itt határozzuk meg az oszlopok szélességét
