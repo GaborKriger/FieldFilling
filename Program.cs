@@ -5,7 +5,7 @@ using FieldFilling.util;
 
 class Program
 {
-    // Ez a lista tartalmazz a számlákat
+    // Ez a lista tartalmazz a számlákat, itt lehetne akkár a dataset
     static List<Invoice> invoices = new();
 
     static void Main(string[] args)
