@@ -2,6 +2,7 @@
 {
     internal class Invoice
     {
+        // Beolvasot számlák oszlopai
         public string ColumnA { get; set; }
         public string ColumnB { get; set; }
         public string ColumnC { get; set; }
